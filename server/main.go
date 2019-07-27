@@ -9,7 +9,6 @@ import (
 	"log"
 	"math/big"
 	"net"
-	"strconv"
 )
 /* Variable Declaration */
 var factVal uint64 = 1 // uint64 is the set of all unsigned 64-bit integers.
@@ -29,7 +28,7 @@ func (s *server) SendGet(ctx context.Context, in *pb.TemplateRequest) (*pb.Templ
 }
 
 func (s *server) SendPost(ctx context.Context, in *pb.TemplateRequest) (*pb.TemplateResponse, error) {
-	return &pb.TemplateResponse{Message: "Received POST method " + in.Name}, nil
+	return &pb.TemplateResponse{Message: "Received POST method "}, nil
 }
 /*     function declaration        */
 func factorial(n int) uint64 {

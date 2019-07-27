@@ -28,13 +28,14 @@ func main() {
 	if len(os.Args) > 1 {
 		name = os.Args[1]
 	}
-	r, err := c.SendGet(context.Background(), &pb.TemplateRequest{Name: name})
+
+	r, err := c.SendGet(context.Background(), &pb.TemplateRequest{Num: num})
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}
 	log.Printf("Client GET: %s", r.Message)
 
-	r, err = c.SendPost(context.Background(), &pb.TemplateRequest{Name: name})
+	r, err = c.SendPost(context.Background(), &pb.TemplateRequest{Num: num})
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}
