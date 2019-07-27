@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	pb "github.com/rephus/grpc-gateway-example/template"
+	pb "github.com/rai-prashanna/gateway/template"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )

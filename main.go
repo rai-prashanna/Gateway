@@ -10,7 +10,7 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	gw "github.com/rephus/grpc-gateway-example/template"
+	gw "github.com/rai-prashanna/gateway/template"
 	"golang.org/x/net/context"
 )
 
